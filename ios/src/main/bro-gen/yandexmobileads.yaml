@@ -1,0 +1,445 @@
+package: org.robovm.pods.yandexmobileads
+include: [foundation, uikit, coregraphics, coreanimation, corelocation]
+framework: YandexMobileAds
+clang_args: ['-x', 'objective-c']
+headers:
+  - YandexMobileAds-Swift.h
+typedefs: {}
+enums:
+  YMAAdErrorCode: {}
+  YMAAdTheme: {}
+  YMAAdType: {}
+  YMANativeAdType: {}
+  YMANativeErrorCode: {}
+  YMASizeConstraintType: {}
+classes:
+  YMAHorizontalOffset: {}
+  YMANativeAdView: {}
+  YMANativeMediaView: {}
+  NativePromoBannerView: {}
+  YMAAdInfo:
+    methods:
+      '-initWithAdUnitId:adSize:':
+        #trim_after_first_colon: true
+        name: initWithAdUnitId$adSize$
+  YMAAdRequest:
+    methods:
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+  YMAAdRequestConfiguration:
+    methods:
+      '-initWithAdUnitID:':
+        name: initWithAdUnitID$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+  YMAAdRequestError:
+    methods:
+      '-initWithAdUnitId:error:':
+        #trim_after_first_colon: true
+        name: initWithAdUnitId$error$
+  YMAAdSize:
+    methods:
+      '-initWithSize:':
+        name: initWithSize$
+  YMAAdView:
+    methods:
+      '-initWithAdUnitID:adSize:':
+        #trim_after_first_colon: true
+        name: initWithAdUnitID$adSize$
+      '-loadAdWithRequest:':
+        name: loadAdWithRequest$
+  YMAAppOpenAd: {}
+  YMAAppOpenAdLoader:
+    methods:
+      '-loadAdWith:':
+        name: loadAdWith$
+  YMAAudioSessionManager: {}
+  YMABannerAdSize:
+    methods:
+      '+fixedSizeWithWidth:height:':
+        #trim_after_first_colon: true
+        name: fixedSizeWithWidth$height$
+      '+inlineSizeWithWidth:maxHeight:':
+        #trim_after_first_colon: true
+        name: inlineSizeWithWidth$maxHeight$
+      '+stickySizeWithContainerWidth:':
+        name: stickySizeWithContainerWidth$
+  YMABidderTokenLoader:
+    methods:
+      '-loadBidderTokenWithRequestConfiguration:completionHandler:':
+        #trim_after_first_colon: true
+        name: loadBidderTokenWithRequestConfiguration$completionHandler$
+  YMABidderTokenRequestConfiguration:
+    methods:
+      '-initWithAdType:':
+        name: initWithAdType$
+  YMAButtonAppearance:
+    methods:
+      '-initWithTextAppearance:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: initWithTextAppearance$normalColor$highlightedColor$borderColor$borderWidth$
+      '-initWithTextAppearance:highlightedTextColor:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: initWithTextAppearance$highlightedTextColor$normalColor$highlightedColor$borderColor$borderWidth$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+      '+appearanceWithTextAppearance:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: appearanceWithTextAppearance$normalColor$highlightedColor$borderColor$borderWidth$
+      '+appearanceWithTextAppearance:highlightedTextColor:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: appearanceWithTextAppearance$highlightedTextColor$normalColor$highlightedColor$borderColor$borderWidth$
+  YMADeviceType:
+    methods:
+      '-initWithRawValue:':
+        name: initWithRawValue$
+  YMAImageAppearance:
+    methods:
+      '-initWithWidthConstraint:':
+        name: initWithWidthConstraint$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+      '+appearanceWithWidthConstraint:':
+        name: appearanceWithWidthConstraint$
+  YMAInterstitialAd: {}
+  YMAInterstitialAdLoader:
+    methods:
+      '-loadAdWithRequestConfiguration:':
+        name: loadAdWithRequestConfiguration$
+  YMALabelAppearance:
+    methods:
+      '-initWithFont:textColor:':
+        #trim_after_first_colon: true
+        name: initWithFont$textColor$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+      '+appearanceWithFont:textColor:':
+        #trim_after_first_colon: true
+        name: appearanceWithFont$textColor$
+  YMAMobileAds:
+    methods:
+      '+blockAdWithReason:':
+        name: blockAdWithReason
+      '+initializeSDKWithCompletionHandler:':
+        name: initializeSDKWithCompletionHandler$
+  YMAMutableAdRequest:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableAdRequestConfiguration:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithAdUnitID:':
+        name: initWithAdUnitID$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableButtonAppearance:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithTextAppearance:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: initWithTextAppearance$normalColor$highlightedColor$borderColor$borderWidth$
+      '-initWithTextAppearance:highlightedTextColor:normalColor:highlightedColor:borderColor:borderWidth:':
+        #trim_after_first_colon: true
+        name: initWithTextAppearance$highlightedTextColor$normalColor$highlightedColor$borderColor$borderWidth$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableImageAppearance:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithWidthConstraint:':
+        name: initWithWidthConstraint$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableLabelAppearance:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithFont:textColor:':
+        #trim_after_first_colon: true
+        name: initWithFont$textColor$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableNativeAdRequestConfiguration:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithAdUnitID:':
+        name: initWithAdUnitID$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableNativeTemplateAppearance:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableRatingAppearance:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithEmptyStarColor:filledStarColor:starSize:':
+        #trim_after_first_colon: true
+        name: initWithEmptyStarColor$filledStarColor$starSize$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMAMutableSizeConstraint:
+    methods:
+      # -- methods available in super, don't config if super is configured --
+      '-initWithType:value:':
+        #trim_after_first_colon: true
+        name: initWithType$value$
+      '-copyWithZone:':
+        name: copyWithZone$
+  YMANativeAdAssets: {}
+  YMANativeAdImage: {}
+  YMANativeAdLoader:
+    methods:
+      '-loadAdWithRequestConfiguration:':
+        name: loadAdWithRequestConfiguration$
+  YMANativeAdMedia: {}
+  YMANativeAdRequestConfiguration:
+    methods:
+      '-initWithAdUnitID:':
+        name: initWithAdUnitID$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+  YMANativeAdVideoController: {}
+  YMANativeAdViewData: {}
+  YMANativeBannerView:
+    methods:
+      '-encodeWithCoder:':
+        name: encodeWithCoder$
+      '+heightWithAd:width:appearance:':
+        #trim_after_first_colon: true
+        name: heightWithAd$width$appearance$
+        # -- methods available in super, don't config if super is configured --
+      '-initWithFrame:':
+        name: initWithFrame$
+      '-initWithCoder:':
+        name: initWithCoder$
+  YMANativeBulkAdLoader:
+    methods:
+      '-loadAdsWithRequestConfiguration:adsCount:':
+        #trim_after_first_colon: true
+        name: loadAdsWithRequestConfiguration$adsCount$
+  YMANativeTemplateAppearance:
+    methods:
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+  YMANativeVideoPlaybackControls:
+    methods:
+      '-initWithProgressControl:muteControl:':
+        #trim_after_first_colon: true
+        name: initWithProgressControl$muteControl$
+  YMARatingAppearance:
+    methods:
+      '-initWithEmptyStarColor:filledStarColor:starSize:':
+        #trim_after_first_colon: true
+        name: initWithEmptyStarColor$filledStarColor$starSize$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+      '+appearanceWithEmptyStarColor:filledStarColor:starSize:':
+        #trim_after_first_colon: true
+        name: appearanceWithEmptyStarColor$filledStarColor$starSize$
+  YMARewardedAd: {}
+  YMARewardedAdLoader:
+    methods:
+      '-loadAdWithRequestConfiguration:':
+        name: loadAdWithRequestConfiguration$
+  YMASizeConstraint:
+    methods:
+      '-initWithType:value:':
+        #trim_after_first_colon: true
+        name: initWithType$value$
+      '-copyWithZone:':
+        name: copyWithZone$
+      '-mutableCopyWithZone:':
+        name: mutableCopyWithZone$
+      '+constraintWithType:value:':
+        #trim_after_first_colon: true
+        name: constraintWithType$value$
+  YMAVersion: {}
+  YMAVideoController: {}
+protocols:
+  YMAAdViewDelegate:
+    methods:
+      '-adViewDidFailLoading:error:':
+        #trim_after_first_colon: true
+        name: adViewDidFailLoading$error$
+      '-adView:willPresentScreen:':
+        #trim_after_first_colon: true
+        name: adView$willPresentScreen$
+      '-adView:didDismissScreen:':
+        #trim_after_first_colon: true
+        name: adView$didDismissScreen$
+      '-adView:didTrackImpressionWithData:':
+        #trim_after_first_colon: true
+        name: adView$didTrackImpressionWithData$
+  YMAAppOpenAdDelegate:
+    methods:
+      '-appOpenAd:didFailToShowWithError:':
+        #trim_after_first_colon: true
+        name: appOpenAd$didFailToShowWithError$
+      '-appOpenAd:didTrackImpressionWithData:':
+        #trim_after_first_colon: true
+        name: appOpenAd$didTrackImpressionWithData$
+  YMAAppOpenAdLoaderDelegate:
+    methods:
+      '-appOpenAdLoader:didLoad:':
+        #trim_after_first_colon: true
+        name: appOpenAdLoader$didLoad$
+      '-appOpenAdLoader:didFailToLoadWithError:':
+        #trim_after_first_colon: true
+        name: appOpenAdLoader$didFailToLoadWithError$
+  YMAAudioSessionManagerDelegate: {}
+  YMAImpressionData: {}
+  YMAInterstitialAdDelegate:
+    methods:
+      '-interstitialAd:didFailToShowWithError:':
+        #trim_after_first_colon: true
+        name: interstitialAd$didFailToShowWithError$
+      '-interstitialAd:didTrackImpressionWithData:':
+        #trim_after_first_colon: true
+        name: interstitialAd$didTrackImpressionWithData$
+  YMAInterstitialAdLoaderDelegate:
+    methods:
+      '-interstitialAdLoader:didLoad:':
+        #trim_after_first_colon: true
+        name: interstitialAdLoader$didLoad$
+      '-interstitialAdLoader:didFailToLoadWithError:':
+        #trim_after_first_colon: true
+        name: interstitialAdLoader$didFailToLoadWithError$
+  YMANativeAdDelegate:
+    methods:
+      '-nativeAd:willPresentScreen:':
+        #trim_after_first_colon: true
+        name: nativeAd$willPresentScreen$
+      '-nativeAd:didDismissScreen:':
+        #trim_after_first_colon: true
+        name: nativeAd$didDismissScreen$
+      '-nativeAd:didTrackImpressionWithData:':
+        #trim_after_first_colon: true
+        name: nativeAd$didTrackImpressionWithData$
+  YMANativeAdImageLoadingObserver: {}
+  YMANativeAdLoaderDelegate:
+    methods:
+      '-nativeAdLoader:didLoadAd:':
+        #trim_after_first_colon: true
+        name: nativeAdLoader$didLoadAd$
+      '-nativeAdLoader:didFailLoadingWithError:':
+        #trim_after_first_colon: true
+        name: nativeAdLoader$didFailLoadingWithError$
+  YMANativeAdVideoControllerProvider: {}
+  YMANativeBulkAdLoaderDelegate:
+    methods:
+      '-nativeBulkAdLoader:didLoadAds:':
+        #trim_after_first_colon: true
+        name: nativeBulkAdLoader$didLoadAds$
+      '-nativeBulkAdLoader:didFailLoadingWithError:':
+        #trim_after_first_colon: true
+        name: nativeBulkAdLoader$didFailLoadingWithError$
+  YMANativeVideoPlaybackMuteControl:
+    methods:
+      '-configureWithIsMuted:':
+        name: configureWithIsMuted$
+      '-configureWithIsHidden:':
+        name: configureWithIsHidden$
+  YMANativeVideoPlaybackMuteControlDelegate:
+    methods:
+      '-muteControl:didChangeIsMuted:':
+        #trim_after_first_colon: true
+        name: muteControl$didChangeIsMuted$
+  YMANativeVideoPlaybackProgressControl:
+    methods:
+      '-configureWithPosition:duration:':
+        #trim_after_first_colon: true
+        name: configureWithPosition$duration$
+  YMARating: {}
+  YMAReward: {}
+  YMARewardedAdDelegate:
+    methods:
+      '-rewardedAd:didReward:':
+        #trim_after_first_colon: true
+        name: rewardedAd$didReward$
+      '-rewardedAd:didFailToShowWithError:':
+        #trim_after_first_colon: true
+        name: rewardedAd$didFailToShowWithError$
+      '-rewardedAd:didTrackImpressionWith:':
+        #trim_after_first_colon: true
+        name: rewardedAd$didTrackImpressionWith$
+  YMARewardedAdLoaderDelegate:
+    methods:
+      '-rewardedAdLoader:didLoad:':
+        #trim_after_first_colon: true
+        name: rewardedAdLoader$didLoad$
+      '-rewardedAdLoader:didFailToLoadWithError:':
+        #trim_after_first_colon: true
+        name: rewardedAdLoader$didFailToLoadWithError$
+  YMAVideoDelegate: {}
+  YMANativeAd:
+    methods:
+      '-bindWithAdView:error:':
+        #trim_after_first_colon: true
+        name: bindWithAdView$error$
+      '-bindAdToView:viewData:error:':
+        #trim_after_first_colon: true
+        name: bindAdToView$viewData$error$
+      '-bindAdToSliderView:error:':
+        #trim_after_first_colon: true
+        name: bindAdToSliderView$error$
+functions:
+  (YMA.*):
+    class: YMAMobileAds
+    name: '#{g[0]}'
+values:
+  kYMAGenderFemale:
+    class: YMAGender
+    name: Female
+  kYMAGenderMale:
+    class: YMAGender
+    name: Male
+  kYMAAdsErrorDomain:
+    class: YMAErrors
+    name: getAdsErrorDomain
+  kYMANativeAdErrorDomain:
+    class: YMAErrors
+    name: getNativeAdErrorDomain
+  k?(YMA.*):
+    class: YMAMobileAds
+    name: '#{g[0]}'
+constants:
+  k?YMAAdErrorCode(.*):
+    class: YMAAdErrorCode
+    name: '#{g[0]}'
+  k?YMAAdTheme(.*):
+    class: YMAAdTheme
+    name: '#{g[0]}'
+  k?YMAAdType(.*):
+    class: YMAAdType
+    name: '#{g[0]}'
+  k?YMANativeAdType(.*):
+    class: YMANativeAdType
+    name: '#{g[0]}'
+  k?YMANativeErrorCode(.*):
+    class: YMANativeErrorCode
+    name: '#{g[0]}'
+  k?YMASizeConstraintType(.*):
+    class: YMASizeConstraintType
+    name: '#{g[0]}'
+  k?(YMA.*):
+    class: YMAMobileAds
+    name: '#{g[0]}'
