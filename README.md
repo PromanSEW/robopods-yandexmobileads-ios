@@ -44,6 +44,9 @@ dependencies {
    implementation "io.github.promansew.robovm:robopods-yandexmobileads-ios:1.0.0-SNAPSHOT"
 }
 ```
-Project is not released on Maven, need to deploy repository project locally first.
+Project is not released on Maven, need to deploy repository project locally first:
+```
+mvn jar:jar install:install
+```
 
 ## [Yandex Mobile Ads home page](https://github.com/yandexmobile/yandex-ads-sdk-ios)
